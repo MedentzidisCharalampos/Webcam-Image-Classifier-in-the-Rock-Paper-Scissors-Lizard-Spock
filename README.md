@@ -20,7 +20,7 @@ The model takes the dataset (x's and y's) training for 10 epochs. On each batch 
 We took five different samples: rock, paper, scissors, lizard, Spock to classify the gestures that was feed to the webcam.
 The procedure was as follows:
 1. Capturing the Samples
-2. Encoded the for training
+2. Encode the labels for training
 3. Training the neural network with the transfered features from the MobileNet
 4. Get prediction
 5. Evaluate the prediction and update UI
