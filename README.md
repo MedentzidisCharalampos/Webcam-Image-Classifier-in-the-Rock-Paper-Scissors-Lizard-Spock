@@ -5,9 +5,9 @@
  
  The script webcam.js has been open sourced by Google as a library that manages the webcam in the browser and in particular for capturing images to tensors.   
  
- The script index.js  initialize the webcam with it , load the JSON model from the hosted URL and load it into an object and get one of the output layers from the pretrained mobilenet.The layer conv_pw_13_relu is selected and everything above that will freeze. A new model was created and took as input the selected layer.  
+ The script index.js  initialize the webcam with it , load the JSON model from the hosted URL and load it into an object and get one of the output layers from the pretrained mobilenet. The layer conv_pw_13_relu is selected and everything above that will freeze. A new model was created and took as input the selected layer.  
  
- The script rpsls.js loads the dataset class. As we add new examples to the dataset, we keep track of their labels. The examples is the prediction for the image from the truncated MobileNet. The labei is the values 0, 1, 2, 3 or 4 for rock, paper, scrissors, lizard, spook accordingly. Then, the labels are encoded using one-hot encoding for the training.  
+ The script rpsls.js loads the dataset class. As we add new examples to the dataset, we keep track of their labels. The examples is the prediction for the image from the truncated MobileNet. The label is the values 0, 1, 2, 3 or 4 for rock, paper, scrissors, lizard, spook accordingly. Then, the labels are encoded using one-hot encoding for the training.  
  
 The architecture of the model is as follows:  
 Flattened Output from the the MobileNet that we created earlier by truncated the MobileNet  
